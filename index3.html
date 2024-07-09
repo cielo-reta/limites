@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Límites en Cálculo Diferencial</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #2c3e50;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1, h2, h3 {
+            color: #2980b9;
+            text-align: center;
+        }
+        p, li {
+            line-height: 1.6;
+        }
+        pre {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .example, .exercise {
+            margin-bottom: 20px;
+        }
+        .example-title, .exercise-title {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Límites en Cálculo Diferencial</h1>
+        
+        <h2>Introducción a los Límites</h2>
+        <p>Los límites son fundamentales en el cálculo y nos permiten entender el comportamiento de funciones cuando se acercan a un punto específico.</p>
+        
+        <h2>Definición Formal del Límite</h2>
+        <p>El límite de una función f(x) cuando x se aproxima a c es L si f(x) se acerca arbitrariamente cerca de L cuando x se acerca a c.</p>
+        <p>Notación:</p>
+        <pre>\[\lim_{{x \to c}} f(x) = L\]</pre>
+        
+        <h2>Propiedades de los Límites</h2>
+        <p>Suma y Diferencia:</p>
+        <pre>\[\lim_{{x \to c}} [f(x) + g(x)] = \lim_{{x \to c}} f(x) + \lim_{{x \to c}} g(x)\]</pre>
+        <p>Producto:</p>
+        <pre>\[\lim_{{x \to c}} [f(x) \cdot g(x)] = \lim_{{x \to c}} f(x) \cdot \lim_{{x \to c}} g(x)\]</pre>
+        <p>Cociente:</p>
+        <pre>\[\lim_{{x \to c}} \left( \frac{f(x)}{g(x)} \right) = \frac{\lim_{{x \to c}} f(x)}{\lim_{{x \to c}} g(x)}\] siempre que \(\lim_{{x \to c}} g(x) \neq 0\).</pre>
+        
+        <h2>Límites Laterales</h2>
+        <p>Límite por la Derecha:</p>
+        <pre>\[\lim_{{x \to c^+}} f(x)\]</pre>
+        <p>Límite por la Izquierda:</p>
+        <pre>\[\lim_{{x \to c^-}} f(x)\]</pre>
+        
+        <h2>Límites Infinitos</h2>
+        <p>Cuando x se Aproxima a Infinito:</p>
+        <pre>\[\lim_{{x \to \infty}} f(x)\]</pre>
+        <p>Cuando f(x) se Aproxima a Infinito:</p>
+        <pre>\[\lim_{{x \to c}} f(x) = \infty\]</pre>
+        
+        <h2>Continuidad y Límites</h2>
+        <p>Una función es continua en un punto c si:</p>
+        <pre>\[\lim_{{x \to c}} f(x) = f(c)\]</pre>
+        
+        <h2>Teoremas Importantes</h2>
+        <p>Teorema del Sándwich: Si \(g(x) \leq f(x) \leq h(x)\) para todo x cerca de c, excepto posiblemente en c, y:</p>
+        <pre>\[\lim_{{x \to c}} g(x) = \lim_{{x \to c}} h(x) = L\]</pre>
+        <p>Entonces:</p>
+        <pre>\[\lim_{{x \to c}} f(x) = L\]</pre>
+        
+        <h2>Ejemplos y Problemas Resueltos</h2>
+        <div class="example">
+            <p class="example-title">Ejemplo 1:</p>
+            <pre>\[\lim_{{x \to 2}} (3x + 5) = 11\]</pre>
+        </div>
+        <div class="example">
+            <p class="example-title">Ejemplo 2:</p>
+            <pre>\[\lim_{{x \to 0}} \frac{\sin x}{x} = 1\]</pre>
+        </div>
+        <div class="example">
+            <p class="example-title">Ejemplo 3:</p>
+            <pre>\[\lim_{{x \to 0}} \frac{1 - \cos x}{x^2} = \frac{1}{2}\]</pre>
+        </div>
+        
+        <h2>Ejercicios Prácticos</h2>
+        <div class="exercise">
+            <p class="exercise-title">Problema 1:</p>
+            <pre>\[\lim_{{x \to 3}} (x^2 - 9)\]</pre>
+        </div>
+        <div class="exercise">
+            <p class="exercise-title">Problema 2:</p>
+            <pre>\[\lim_{{x \to 1}} \frac{x^2 - 1}{x - 1}\]</pre>
+        </div>
+        <div class="exercise">
+            <p class="exercise-title">Problema 3:</p>
+            <pre>\[\lim_{{x \to -1}} \frac{x^3 + x^2 - x - 1}{x + 1}\]</pre>
+        </div>
+    </div>
+    <div class="footer">
+        <p>  ❤️Cielo Rubi Reta Muñoz❤️</p>
+    </div>
+</body>
+</html>
